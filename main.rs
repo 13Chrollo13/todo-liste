@@ -1,3 +1,12 @@
+use std::fs::{read, OpenOptions};
+use std::io;
+use std::io::Read;
+use std::fs::read_to_string;
+use std::fs::File;
+use std::io::prelude::*;
+use std::io::Result;
+
+
 fn main() {
     println!("wiist du eine datei lesen (1) oder etwas bearbeiten (2)");
     let mut a= String::new();
